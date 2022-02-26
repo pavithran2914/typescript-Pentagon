@@ -1,17 +1,12 @@
-import { Line } from './line.model';
+import { Dot } from './dot.model';
+import { Coordinate } from './coordinate.model';
 
 export class Pentagon {
-  line1: Line;
-  line2: Line;
-  line3: Line;
-  line4: Line;
-  line5: Line;
+  dot: Dot;
+  pen: Coordinate;
 
-  constructor(line1: Line, line2: Line, line3: Line, line4: Line, line5: Line) {
-    this.line1 = line1;
-    this.line2 = line2;
-    this.line3 = line3;
-    this.line4 = line4;
-    this.line5 = line5;
+  constructor(dot: Dot, pen: Coordinate) {
+    this.dot = dot;
+    this.pen = pen;
   }
 }

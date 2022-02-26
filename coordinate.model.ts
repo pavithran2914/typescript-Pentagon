@@ -1,14 +1,12 @@
 export class Coordinate {
-  angle: number;
   line: number;
-  constructor(line: number, angle: number) {
-    this.angle = angle;
+  constructor(line: number) {
     this.line = line;
-    this.rect();
+    this.pen();
   }
-  rect() {
+  pen() {
     console.log(
-      `Line = ${this.line} \n Left Angle = ${this.angle} \n Right Angle = ${this.angle}`
+      `Bottom = ${this.line} \n Left Bottom = ${this.line} \n Right Bottom = ${this.line} \n Left Top = ${this.line} \n Right Top = ${this.line}`
     );
   }
 }
